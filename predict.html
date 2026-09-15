@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <center>
+        <h1>Prediction</h1>
+
+
+        {% if data ==0 %}
+        <h1>IRIS SETOSA</h1>
+        <img src="{{url_for('static', filename= 'setosa.jpg')}}">
+
+
+        {% elif data ==1 %}
+        <h1>IRIS VERSICOLOUR</h1>
+        <img src="{{url_for('static', filename= 'veriscolor.jpg')}}">
+
+
+        {% elif data ==2 %}
+        <h1>IRIS VIRGINICA</h1>
+        <img src="{{url_for('static', filename= 'virginica.jpg')}}">
+
+
+        {% else %}
+        <h1>INVALID PREDICTION</h1>
+
+
+        {% endif %}
+       
+        <br><br>
+
+
+        <a href="/"> Go back to Home Page</a>
+
+
+    </center>
+    </body>
+</html>
